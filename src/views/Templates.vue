@@ -1,5 +1,5 @@
 <script setup>
-import Templates from '@/jsonData/templates.json'; 
+import Templates from '../jsonData/templates.json'; 
 import { TemplateCard } from '@/components/Cards'; 
 import Button from '@/components/Buttons/Button.vue';
 import { ref, onMounted} from 'vue';

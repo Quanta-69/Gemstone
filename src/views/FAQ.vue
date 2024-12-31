@@ -1,6 +1,6 @@
 <script setup>
 import { faqCard } from '@/components/Cards';
-import faqCards from '@/jsonData/faqs.json';
+import faqCards from '../jsonData/faqs.json';
 
 const faqs = faqCards;
 </script>

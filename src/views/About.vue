@@ -1,8 +1,8 @@
 <script setup>
 import { statCard, teamCard, missionCard } from '@/components/Cards';
-import statCards from '@/jsonData/stats.json';
-import teamCards from '@/jsonData/teams.json';
-import missionCards from '@/jsonData/missionCards.json'
+import statCards from '../jsonData/stats.json';
+import teamCards from '../jsonData/teams.json';
+import missionCards from '../jsonData/missionCards.json'
 </script>
 
 <template>
