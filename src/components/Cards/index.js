@@ -1,0 +1,11 @@
+export { default as TemplateCard } from './TemplateCard.vue';
+export { default as HomeCard } from './HomeCard.vue';
+export { default as statCard } from './statCard.vue';
+export { default as teamCard } from './teamCard.vue';
+export { default as testimonialCard } from './testimonialCard.vue';
+export { default as contactCard } from './contactCard.vue';
+export { default as faqCard } from './faqCard.vue';
+export { default as hostCard } from './hostCard.vue';
+export { default as processCard } from './processCard.vue';
+export { default as paymentCard } from './paymentCard.vue';
+export { default as missionCard } from './missionCard.vue';

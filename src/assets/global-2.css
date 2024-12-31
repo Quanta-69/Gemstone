@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    /* Colors */
+    --background-color: #1a1a1a; /* Midnight Blue for dark background */
+    --primary-color: #E4E4E4; /* Diamond White */
+    --secondary-color: #E0115F; /* Ruby Red */
+    --accent-color: #9966CC; /* Amethyst Purple */
+    --highlight-color: #FFD700; /* Gold for highlights */
+    --gradient:linear-gradient(to right, var(--secondary-color), var(--secondary-color), var(--accent-color), var(--accent-color));
+    --opp-gradient:linear-gradient(to left, var(--secondary-color), var(--secondary-color), var(--accent-color), var(--accent-color));
+
+    /* Additional Color Variations */
+    --light-bg-color: #333333; 
+    --dark-text: #111111;
+    --light-text:#E4E4E4;
+    --link-color: #E0115F; 
+    --border-color: #444444; 
+    --primary-border:rgba(228, 228, 228, 0.5);
+    --secondary-border:rgba(224, 17, 96, 0.5);
+    --accent-border:rgba(153, 102, 204, 0.5);
+    
+    /* Font Sizes */
+    --base-font: 16px; /* Default font size */
+    --sm-font: 14px; /* Small text */
+    --md-font: 18px; /* Medium text */
+    --lg-font: 24px; /* Large headings or highlights */
+    --xlg-font:32px;
+
+    /* Font Families */
+    --primary-font: 'Inter'; /* Default font family */
+    --secondary-font: 'Merriweather'; /* For headers, titles, or bold text */
+
+    /* Spacing */
+    --base-spacing: 16px; /* For padding and margins */
+    --sm-spacing: 8px; /* Smaller spaces for subtle separations */
+    --md-spacing: 24px; /* Larger spacing for sections */
+    --lg-spacing: 32px; /* Extra spacing for large sections or modals */
+    
+    /* Buttons */
+    --btn-spacing:10px 20px;/* Normal Button Spacing */
+    --bg-btn-spacing:15px 25px;/* Big Button Spacing */
+
+    /* Shadows & Effects */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for cards and elements */
+    --btn-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+*{
+    border: none !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    transition: .3s ease;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 1.6rem;
+}
+.overlay{
+    border-image:fill 0 radial-gradient(circle,rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) !important;
+}
+
+html::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+html::-webkit-scrollbar-track {
+    background-color: #1a1a1a; /* Track color */
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #444; /* Thumb color */
+    border-radius: 6px; /* Rounded corners */
+}
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #666; /* Thumb color on hover */
+}
+/* Firefox scrollbar customization */
+html {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #444 #1a1a1a; /* Thumb color and track color */
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .card{
+    }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .card{
+        background: red !important;
+    }
+}
+
+/* Medium devices (small laptops) */
+@media (min-width: 768px) and (max-width: 992px) {}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {}

@@ -1,0 +1,70 @@
+section {
+    @apply p-4 my-4 rounded-3xl
+}
+section:nth-child(even){
+
+}
+body, section, .container, .sub-sect, .wrapper,.cards, .btn-wrap{
+    @apply flex items-center justify-center w-full flex-wrap
+}
+
+.container{
+    @apply flex-col gap-0 
+}
+.sub-sect {
+    @apply flex-col border-b-2 border-slate-700 py-8
+}
+.sub-sect-title {
+    background: var(--gradient);
+    @apply my-5 bg-clip-text text-transparent text-3xl font-medium text-center border-red-400  sm:text-4xl
+}
+.sect-intro {
+    @apply text-center text-3xl font-medium my-4 sm:text-4xl
+}
+.wrapper {
+    .lg-info{
+        @apply text-2xl sm:text-4xl text-slate-300 font-medium
+    }
+    @apply flex-row gap-6 py-4 border-purple-500
+}
+.cards {
+    @apply p-6 gap-4;
+}
+.card {
+    @apply sm:w-full bg-zinc-800 flex-col flex justify-center items-center gap-4  rounded-lg shadow-lg p-4 w-full max-w-xs transform transition-all duration-300 hover:translate-y-[-10px];
+
+    .title{
+        @apply text-white text-xl font-medium sm:text-2xl
+    }
+    .text-content{
+        @apply text-slate-400 text-xl
+    }
+}
+/* UPDATED OLD STYLES!! */
+.svg{
+    svg{
+        color: var(--accent-color) !important;
+        @apply w-full h-full 
+    }
+    box-shadow: var(--btn-shadow);
+    @apply p-3 h-14 w-14 rounded-full bg-zinc-900
+}
+.btn-wrap{
+    @apply gap-4 w-full p-6 my-5
+}
+button{
+    box-shadow: var(--btn-shadow);
+    letter-spacing: 1px;
+    transition: all .5s;
+    z-index: 1;
+    @apply overflow-hidden relative rounded-md text-sm font-semibold uppercase border-none cursor-pointer py-3 px-6
+}
+button::before {
+    content: "";
+    z-index: -1;
+    transition: all .4s;
+    @apply absolute top-0 left-0 h-full w-0
+}
+button:hover::before {
+    @apply w-full
+}

@@ -1,0 +1,19 @@
+[   
+    {
+        "id":"1",
+        "teamImage":"/src/assets/site-assets/team/quantoxt.jpg",
+        "name":"Quantoxt",
+        "role":"Lead Developer",
+        "description":"A crazy developer who loves solving problems!",
+        "portfolio":"https://youtube.com"
+    },
+
+    {
+        "id":"2",
+        "name":"Chuks",
+        "teamImage":"/src/assets/site-assets/team/chuks.jpg",
+        "role":"Site Manager",
+        "description":"A crazy developer who loves solving problems!",
+        "portfolio":"https://youtube.com"
+    }
+]
