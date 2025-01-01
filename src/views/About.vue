@@ -1,5 +1,6 @@
 <script setup>
-import { statCard, teamCard } from '@/components/Cards';
+import { teamCard } from '@/components/Cards';
+import { statCard } from '@/components/Cards';
 import statCards from '../jsonData/stats.json';
 import teamCards from '../jsonData/teams.json';
 </script>
