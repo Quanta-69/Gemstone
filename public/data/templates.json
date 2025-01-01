@@ -1,0 +1,69 @@
+[
+  {
+   "id": 1,
+   "imagePath":"../assets/site-assets/templateImages/dannydigital.png",
+   "title": "Danny Digital", 
+   "type": "small business", 
+   "size": "medium", 
+   "defaultPrice": "$50", 
+   "aPrice": "$50 - $55",
+   "rPrice": "$70 - $75",
+   "dPrice": "$90 - $95",
+   "description": "Buy an affiliate marketing course" ,
+   "demoLink":"https://dannydigital.vercel.app",
+   "amethystLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Amethyst%20Tier.*%20I%20would%20like%20to%20use%20the%20template%20named%20*Danny%20Digital*%20for%20my%20project.%20Kindly%20assist%20me%20further.",
+   "rubyLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Ruby%20Tier.*%20I%20would%20like%20to%20use%20the%20template%20named%20*Danny%20Digital*%20for%20my%20project.%20Kindly%20assist%20me%20further.",
+   "diamondLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Diamond%20Tier*.%20I%20would%20like%20to%20use%20the%20template%20named%20*Danny%20Digital*%20for%20my%20project.%20Kindly%20assist%20me%20further."
+  },
+
+  { 
+   "id": 2,
+   "imagePath":"/src/assets/site-assets/templateImages/nosa.png",
+   "title": "NOSA Logistics", 
+   "type": "small business", 
+   "size": "Medium", 
+   "defaultPrice": "$50", 
+   "aPrice": "$50 - $55",
+   "rPrice": "$70 - $75",
+   "dPrice": "$90 - $95", 
+   "description": "A mini delivery company",
+   "demoLink":"https://nosa-logistics.vercel.app",
+   "amethystLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Amethyst%20Tier.*%20I%20would%20like%20to%20use%20the%20template%20named%20*NOSA%20Logistics*%20for%20my%20project.%20Kindly%20assist%20me%20further.",
+   "rubyLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Ruby%20Tier.*%20I%20would%20like%20to%20use%20the%20template%20named%20*NOSA%20ogistics*%20for%20my%20project.%20Kindly%20assist%20me%20further.",
+   "diamondLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Diamond%20Tier*.%20I%20would%20like%20to%20use%20the%20template%20named%20*NOSA%20Logistics*%20for%20my%20project.%20Kindly%20assist%20me%20further."
+  },
+
+  {
+   "id": 3,
+   "imagePath":"/src/assets/site-assets/templateImages/peacefulpink.png",
+   "title": "Peaceful Pink", 
+   "type": "landing page", 
+   "size": "Small", 
+   "defaultPrice": "$40", 
+   "aPrice": "$40 - $45",
+   "rPrice": "$50 - $55",
+   "dPrice": "$60 - $65", 
+   "description": "A mini landing page",
+   "demoLink":"https://peaceful-pink.vercel.app",
+   "amethystLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Amethyst%20Tier.*%20I%20would%20like%20to%20use%20the%20template%20named%20*Peaceful%20Pink*%20for%20my%20project.%20Kindly%20assist%20me%20further.",
+   "rubyLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Ruby%20Tier.*%20I%20would%20like%20to%20use%20the%20template%20named%20*Peaceful%20Pink*%20for%20my%20project.%20Kindly%20assist%20me%20further.",
+   "diamondLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Diamond%20Tier*.%20I%20would%20like%20to%20use%20the%20template%20named%20*Peaceful%20Pink*%20for%20my%20project.%20Kindly%20assist%20me%20further."
+  },
+
+  { 
+   "id": 4,
+   "imagePath":"/src/assets/site-assets/templateImages/starry.png",
+   "title": "Starry Night", 
+   "type": "landing page", 
+   "size": "small", 
+   "defaultPrice": "$40", 
+   "aPrice": "$40 - $45",
+   "rPrice": "$50 - $55",
+   "dPrice": "$60 - $65", 
+   "description": "A beautiful mini landing page",
+   "demoLink":"https://starry-iota.vercel.app",
+   "amethystLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Amethyst%20Tier.*%20I%20would%20like%20to%20use%20the%20template%20named%20*Starry%20night*%20for%20my%20project.%20Kindly%20assist%20me%20further.",
+   "rubyLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Ruby%20Tier.*%20I%20would%20like%20to%20use%20the%20template%20named%20*Starry%20night*%20for%20my%20project.%20Kindly%20assist%20me%20further.",
+   "diamondLink":"https://wa.me/+2349134438269?text=Hello%20Gemstone%20Sites,%20my%20name%20is%20...,%20and%20I%20am%20interested%20in%20purchasing%20the%20*Diamond%20Tier*.%20I%20would%20like%20to%20use%20the%20template%20named%20*Starry%20night*%20for%20my%20project.%20Kindly%20assist%20me%20further."
+  }
+]
