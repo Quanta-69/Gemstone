@@ -1,6 +1,6 @@
 <script setup>
 import { defineProps } from 'vue';
-import homeCards from '../jsonData/homeCards.json'
+import homeCards from '@/jsonData/homeCards.json'
 import { HomeCard } from '@/components/Cards';
 import { Button } from '@/components/Buttons';
 
