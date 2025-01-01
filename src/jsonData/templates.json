@@ -1,7 +1,7 @@
 [
   {
    "id": 1,
-   "imagePath":"/src/assets/site-assets/templateImages/dannydigital.png",
+   "imagePath":"../assets/site-assets/templateImages/dannydigital.png",
    "title": "Danny Digital", 
    "type": "small business", 
    "size": "medium", 
