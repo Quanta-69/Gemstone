@@ -40,7 +40,7 @@ section{
 h1{
   background: var(--gradient);
   animation: rotateGradient 10s ease infinite;
-  @apply bg-clip-text text-transparent text-5xl py-4 pt-0 font-semibold sm:text-7xl pt-6
+  @apply bg-clip-text text-transparent text-5xl py-4 pt-0 font-semibold sm:text-7xl pt-12
 }
 h2{
   @apply text-2xl font-normal sm:text-4xl text-slate-700 px-3 my-5
