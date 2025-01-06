@@ -8,12 +8,12 @@ defineProps({
 </script>
 
 <template>
-    <div class="card">
+    <div class="card flex-row">
     <div v-html="paymentCard.svg" class="svg"></div>
     <div class="content">
       <h2 class="title">{{ paymentCard.title }}</h2>
     </div>
-</div>
+    </div>
 </template>
 
 <style scoped>

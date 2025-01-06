@@ -19,8 +19,8 @@ defineProps({
             <h2 class="role" >{{ teamCard.role }}</h2>
             <h3 class="description" >{{ teamCard.description }}</h3>
         </div>
-<!--         <a :href="teamCard.portfolio" target="_blank"><Button class="primary" btnContent="portfolio" /></a>
- -->    </div>
+        <a :href="teamCard.portfolio" target="_blank"><Button class="primary" btnContent="portfolio" /></a>
+    </div>
 </template>
 
 <style scoped>

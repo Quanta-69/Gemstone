@@ -17,8 +17,15 @@ import paymentCards from '../jsonData/paymentCards.json'
                         <h1>At Gemstone Sites, simplicity is our cornerstone. Here’s how we turn your website dreams into reality—step by step.</h1>
                     </div>                    
                     <div class="cards">
-                        <processCard v-for="processCard in processCards" :key="processCard.id" :processCard="processCard" />
-                    </div>
+                        <div class="card" v-for="processCard in processCards" :key="processCard.id">
+                            <div class="svg" v-html="processCard.svg" ></div>
+                            <div class="content">
+                                <h2 class="step-name title">{{ processCard.title }}</h2>
+                                <h3 class="text-content">{{ processCard.description }}</h3>
+                            </div>
+                        </div>
+<!--                    <processCard v-for="processCard in processCards" :key="processCard.id" :processCard="processCard" />
+ -->                    </div>
                 </div>
             </div>
 
@@ -79,8 +86,14 @@ import paymentCards from '../jsonData/paymentCards.json'
                         <h1>At Gemstone Sites, we simplify the hosting process to ensure a smooth experience for our clients. Here's how it works</h1>
                     </div>    
                     <div class="cards">
-                        <hostCard v-for="hostCard in hostCards" :key="hostCard.id" :hostCard="hostCard" />
-                    </div>
+                        <div class="card flex-row max-w-sm" v-for="hostCard in hostCards" :key="hostCard.id">
+                            <div v-html="hostCard.svg" class="svg"></div>
+                            <div class="content">
+                            <h2 class="title">{{ hostCard.title }}</h2>
+                            </div>
+                        </div>
+<!--                         <hostCard v-for="hostCard in hostCards" :key="hostCard.id" :hostCard="hostCard" />
+ -->                    </div>
                 </div>
             </div>
 
@@ -88,8 +101,14 @@ import paymentCards from '../jsonData/paymentCards.json'
                 <h2 class="sub-sect-title">Our Payment Methods</h2>
                 <div class="wrapper">
                     <div class="cards">
-                        <paymentCard v-for="paymentCard in paymentCards" :key="paymentCard.id" :paymentCard="paymentCard" />
-                    </div>
+                        <div class="card flex-row" v-for="paymentCard in paymentCards" :key="paymentCard.id">
+                            <div v-html="paymentCard.svg" class="svg"></div>
+                            <div class="content">
+                            <h2 class="title">{{ paymentCard.title }}</h2>
+                            </div>
+                        </div>
+<!--                    <paymentCard v-for="paymentCard in paymentCards" :key="paymentCard.id" :paymentCard="paymentCard" />
+ -->                    </div>
                 </div>
             </div>
 

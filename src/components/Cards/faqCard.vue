@@ -1,18 +1,18 @@
 <script setup>
   import { ref } from 'vue';
   
-  const props = defineProps({
-    faq: {
-      type: Object,
-      required: true,
-    },
-  });
-  
-  const isOpen = ref(false);
-  
-  function toggle() {
-    isOpen.value = !isOpen.value;
-  }
+const props = defineProps({
+  faq: {
+    type: Object,
+    required: true,
+  },
+});
+
+const isOpen = ref(false);
+
+function toggle() {
+  isOpen.value = !isOpen.value;
+}
 </script>
 
 <template>

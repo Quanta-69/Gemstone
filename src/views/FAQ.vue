@@ -1,6 +1,7 @@
 <script setup>
 import { faqCard } from '@/components/Cards';
 import faqCards from '../jsonData/faqs.json';
+import { ref } from 'vue';
 
 const faqs = faqCards;
 </script>

@@ -28,7 +28,7 @@ defineProps({
               <h2 class="title">{{ homeCard.title }}</h2>
             </div>
           </div>
-<!--           <HomeCard v-for="homeCard in homeCards" :key="homeCard.id" :homeCard="homeCard"/>
+<!--      <HomeCard v-for="homeCard in homeCards" :key="homeCard.id" :homeCard="homeCard"/>
  -->        </div>
         <div class="btn-wrap">
           <a href="/all-templates"><Button class="primary py-5" btnContent="see all available templates" /> </a>

@@ -13,8 +13,17 @@ import { Button } from '@/components/Buttons';
             <h2 class="sub-sect-title">What Our Clients Say About Us</h2>
             <div class="wrapper">
                 <div class="cards">
-                    <testimonialCard v-for="testimonialCard in testimonialCards" :key="testimonialCard.id" :testimonialCard="testimonialCard" />
+                  <div class="card max-w-sm" v-for="testimonialCard in testimonialCards" :key="testimonialCard.id">
+                    <div class="svg" v-html="testimonialCard.svg"></div>
+                    <h3 class="text-content">{{ testimonialCard.content }}</h3>
+                    <div class="img py-2 w-full flex items-center justify-center">
+                        <img class="h-20 w-20 rounded-full object-cover border-purple-100" :src="testimonialCard.clientPic" alt="Testimonial Image">
+                    </div>
+                    <h2 class="name title">{{ testimonialCard.clientName }}</h2>
+                    <h2 class="occupation text-slate-500 font-medium text-xl">{{ testimonialCard.clientRole }}</h2>
                 </div>
+<!--                     <testimonialCard v-for="testimonialCard in testimonialCards" :key="testimonialCard.id" :testimonialCard="testimonialCard" />
+ -->                </div>
                 <div class="btn-wrap">
                     <Button @click="$router.push({ name: 'AllTestimonials' })" class="primary end-btn" btnContent="view all testimonials" />
                 </div>

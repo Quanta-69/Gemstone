@@ -13,7 +13,7 @@ defineProps({
     <div class="content">
       <h2 class="title">{{ hostCard.title }}</h2>
     </div>
-</div>
+    </div>
 </template>
 
 <style scoped>

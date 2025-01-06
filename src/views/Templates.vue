@@ -2,7 +2,7 @@
 import Templates from '../jsonData/templates.json'; 
 import { TemplateCard } from '@/components/Cards'; 
 import Button from '@/components/Buttons/Button.vue';
-import { ref, onMounted} from 'vue';
+import { ref, onMounted, defineEmits, defineProps} from 'vue';
 import templateModal from '@/components/Modals/templateModal.vue';
 
 const filters = ref([
@@ -37,6 +37,14 @@ const filteredCards = (filter) => {
 const filterCards = (filter) => {
   activeFilter.value = filter;
 };
+const props = defineProps({
+  template: Object, // Card data from parent
+});
+const emit = defineEmits(['cardClick']);
+// Emit card data to the parent when clicked
+const handleClick = () => {
+  emit('cardClick', props.template);
+};
 </script>
 
 <template>
@@ -49,11 +57,19 @@ const filterCards = (filter) => {
       <h2 class="sub-sect-title">Find Your Perfect Match</h2>
       <div class="wrapper">
         <div class="btn-wrap bg-zinc-800 rounded-xl shadow-md">
-         <Button class="primary" v-for="filter in filters" :key="filter" :class="{ 'active-button': activeFilter === filter }" @click="filterCards(filter)" :btnContent="filter" />
+         <Button class="primary" v-for="filter in filters" :key="filter" :class="{ 'active-button': activeFilter === filter }" @click="filterCards(filter)" :btnContent="filter" @cardClick="openModal" />
         </div>
         <div class="cards">
-          <TemplateCard v-for="template in filteredCards(activeFilter)" :key="template.id" :template="template" @cardClick="openModal" />
-          <!-- Render the modal -->
+          <div class="card sm:max-w-md w-full max-w-lg pt-12 py-8" title="Click For Full Details" @click="handleClick" v-for="template in filteredCards(activeFilter)" :key="template.id">
+            <img class="h-full w-full rounded-xl" :src="template.imagePath" alt="Template Image">
+            <div class="text-content flex-col flex items-start justify-start gap-2 p-3 w-full">
+              <h2 class="text-3xl font-medium text-purple-500" style="color: var(--accent-color);">{{ template.title }}</h2>
+              <h3 class="text-start text-slate-200 text-xl font-medium" >{{ template.size }}</h3>
+              <h3 class="text-start text-slate-200 text-xl font-medium" >{{ template.description }}</h3>
+            </div>
+        </div>
+<!--           <TemplateCard v-for="template in filteredCards(activeFilter)" :key="template.id" :template="template" @cardClick="openModal" />
+ -->          <!-- Render the modal -->
           <templateModal v-if="isModalVisible" :modalData="selectedCard" @update:visible="isModalVisible = $event"/>
         </div>
         <div class="btn-wrap"><Button @click="$router.push({ name: 'AllTemplates' })" class="primary end-btn" btnContent="view all available templates"/></div>
