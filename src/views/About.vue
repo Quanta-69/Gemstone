@@ -19,8 +19,15 @@ import teamCards from '../jsonData/teams.json';
             <div class="sub-sect">
                 <h2 class="sub-sect-title">Why Choose Us</h2>
                 <div class="cards">
-                    <statCard v-for="statCard in statCards" :key="statCard.id" :statCard="statCard" />
-                </div>
+                    <div class="card flex-row" v-for="statCard in statCards" :key="statCard.id">
+                        <div v-html="statCard.svg" class="svg"></div>
+                        <div class="content">
+                        <h2 class="title count text-2xl sm:text-4xl">{{ statCard.count }}</h2>
+                        <h3 class="text-content">{{ statCard.title }}</h3>
+                        </div>
+                    </div>
+<!--                     <statCard v-for="statCard in statCards" :key="statCard.id" :statCard="statCard" />
+ -->                </div>
             </div>
 
             <div class="sub-sect">

@@ -22,8 +22,14 @@ defineProps({
         <h1>{{ intro }}</h1>
         <h2>{{ motto }}</h2>
         <div class="cards">
-          <HomeCard v-for="homeCard in homeCards" :key="homeCard.id" :homeCard="homeCard"/>
-        </div>
+          <div class="card" v-for="homeCard in homeCards" :key="homeCard.id" >
+            <div v-html="homeCard.svg" class="svg"></div>
+            <div class="content">
+              <h2 class="title">{{ homeCard.title }}</h2>
+            </div>
+          </div>
+<!--           <HomeCard v-for="homeCard in homeCards" :key="homeCard.id" :homeCard="homeCard"/>
+ -->        </div>
         <div class="btn-wrap">
           <a href="/all-templates"><Button class="primary py-5" btnContent="see all available templates" /> </a>
         </div>
