@@ -1,5 +1,4 @@
 <script setup>
-import { hostCard, processCard, paymentCard } from '@/components/Cards';
 import processCards from '../jsonData/processes.json';
 import hostCards from '../jsonData/hostCards.json'
 import paymentCards from '../jsonData/paymentCards.json'

@@ -1,5 +1,4 @@
 <script setup>
-import { testimonialCard } from '@/components/Cards';
 import testimonialCards from '../jsonData/testimonials.json';
 import { Button } from '@/components/Buttons';
 

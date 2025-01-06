@@ -1,5 +1,4 @@
 <script setup>
-import { contactCard } from '@/components/Cards';
 import contactCards from '../jsonData/contactCards.json';
 import { Button } from '@/components/Buttons';
 </script>

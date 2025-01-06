@@ -1,6 +1,5 @@
 <script setup>
 import Templates from '../jsonData/templates.json'; 
-import { TemplateCard } from '@/components/Cards'; 
 import Button from '@/components/Buttons/Button.vue';
 import { ref, onMounted, defineEmits, defineProps} from 'vue';
 import templateModal from '@/components/Modals/templateModal.vue';
