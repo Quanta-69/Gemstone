@@ -1,6 +1,6 @@
 <script setup>
 import { statCard, teamCard } from '@/components/Cards';
-import Button from '@/components/Buttons';
+import Button from '@/components/Buttons/Button.vue';
 import statCards from '../../public/data/stats.json'
 import teamCards from '../jsonData/teams.json';
 </script>
